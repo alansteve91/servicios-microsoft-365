@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios Microsoft 365</title>
+  <meta name="description" content="Accesos directos a solicitudes de MFA y restablecimiento de contraseñas de Microsoft 365." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="6"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+      <div>
+        <p class="eyebrow">Solicitudes</p>
+        <p class="brand">Servicios Microsoft 365</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p class="eyebrow">Accesos directos</p>
+      <h1>Servicios Microsoft 365</h1>
+      <p class="lead">Elige la solicitud que necesitas. Cada opción abre el formulario oficial de Microsoft Forms en una pestaña nueva.</p>
+    </section>
+
+    <section id="cards" class="grid" aria-label="Solicitudes disponibles"></section>
+
+    <section class="help">
+      <p class="eyebrow">Guía rápida</p>
+      <h2>¿No sabes cuál elegir?</h2>
+      <ul>
+        <li><strong>Cambiaste o perdiste tu celular</strong> y ya no te llegan los códigos → <em>Restablecimiento MFA</em>.</li>
+        <li><strong>Necesitas entrar hoy</strong> mientras se resuelve tu MFA → <em>MFA Temporal</em>.</li>
+        <li><strong>Olvidaste tu contraseña</strong> de Microsoft 365 → <em>Restablecimiento de Contraseña 365</em>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Departamento de Tecnología · <span id="year"></span></p>
+      <p class="muted">Nunca compartas tu contraseña ni tus códigos MFA por correo, chat o teléfono.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
